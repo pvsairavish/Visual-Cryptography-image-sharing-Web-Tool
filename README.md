@@ -8,6 +8,10 @@
 ![Security](https://img.shields.io/badge/Security-Visual%20Cryptography-red)
 ![Status](https://img.shields.io/badge/Status-Completed-success)
 
+**Try the live application here:**
+
+👉 [(https://visual-cryptography-image-sharing-web-tool-p3bjpgyjhlov4awdvvb.streamlit.app/)](https://visual-cryptography-image-sharing-web-tool-p3bjpgyjhlov4awdvvb.streamlit.app/)]
+
 ### 🛡️ Secure Image Encryption • Secret Sharing • Image Reconstruction
 
 A lightweight **Visual Cryptography web application** that securely splits an image into two independent secret shares. The original image can only be reconstructed when both shares are combined.
