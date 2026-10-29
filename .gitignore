@@ -1,0 +1,33 @@
+# Virtual Environments
+venv/
+env/
+ENV/
+.env
+
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Database & secrets
+users.db
+*.sqlite3
+instance/
+
+# Temporary generated images & uploads (keep sample uploads)
+static/shares/*
+!static/shares/.gitkeep
+static/outputs/*
+!static/outputs/.gitkeep
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE configs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace

@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}Encryption Result{% endblock %}
+{% block content %}
+  <div class="text-center mb-4">
+    <h1 class="display-6 text-primary">✅ Encryption Successful</h1>
+    <p class="text-muted">Your image has been split into two secure shares.</p>
+  </div>
+
+  <div class="row justify-content-center">
+    <div class="col-md-5 mb-3">
+      <div class="card shadow text-center p-3">
+        <h5>Share 1</h5>
+        <img src="{{ share1 }}" class="img-fluid rounded mb-3" alt="Share 1">
+        <a href="{{ share1 }}" download class="btn btn-success w-100">⬇ Download Share 1</a>
+      </div>
+    </div>
+    <div class="col-md-5 mb-3">
+      <div class="card shadow text-center p-3">
+        <h5>Share 2</h5>
+        <img src="{{ share2 }}" class="img-fluid rounded mb-3" alt="Share 2">
+        <a href="{{ share2 }}" download class="btn btn-success w-100">⬇ Download Share 2</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center mt-4">
+    <a href="{{ url_for('index') }}" class="btn btn-outline-primary me-2">🏠 Home</a>
+    <a href="{{ url_for('decrypt') }}?share1={{ share1_name }}&share2={{ share2_name }}" class="btn btn-outline-dark">🔓 Decrypt</a>
+  </div>
+{% endblock %}
